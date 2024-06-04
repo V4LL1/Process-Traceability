@@ -25,6 +25,7 @@ if (isset($_GET['idPeca'])) {
             echo "<p>Já Saiu: " . $row['jaSaiu'] . "</p>";
             echo "<p>Dias de Atraso: " . $row['dias_atraso'] . "</p>";
             echo "<p>Duração Esperada: " . $row['duracao_esperada'] . "</p>";
+            echo "<button onclick=\"window.location.href='edit_piece.php?idPeca=" . $row['idPeca'] . "'\">Editar</button>";
         }
     } else {
         echo "<p>Peça não encontrada.</p>";

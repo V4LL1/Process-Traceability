@@ -74,3 +74,9 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+button {
+    width: auto;
+    padding: 0.5em 2em;
+    margin: 1em 0.5em 1em 0;
+}

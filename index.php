@@ -32,15 +32,21 @@ $categoriaOptions = getOptions('Categoria_Peca', 'idCategoria_Peca', 'categoria'
         <?php echo $processoOptions; ?>
     </select><br>
     <input type="checkbox" id="useProcesso" name="useProcesso">
-    
+    <label for="useProcesso">Filtrar por Processo</label><br>
+
     <label for="Categoria_Peca_idCategoria_Peca">Categoria da Peça:</label>
     <select id="Categoria_Peca_idCategoria_Peca" name="Categoria_Peca_idCategoria_Peca">
         <option value="">Selecione</option>
         <?php echo $categoriaOptions; ?>
     </select><br>
     <input type="checkbox" id="useCategoria" name="useCategoria">
-    
+    <label for="useCategoria">Filtrar por Categoria</label><br>
+
     <button type="submit">Buscar</button>
 </form>
+
+<br>
+<button onclick="window.location.href='add_piece.php'">Adicionar Peça</button>
+<button onclick="window.location.href='remove_piece.php'">Remover Peça</button>
 
 <?php include 'templates/footer.php'; ?>
