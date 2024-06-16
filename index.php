@@ -45,6 +45,13 @@ $categoriaOptions = getOptions('Categoria_Peca', 'idCategoria_Peca', 'categoria'
     <button type="submit">Buscar</button>
 </form>
 
+<h2>Gerar QR Code para Peça</h2>
+<form action="qrcode_piece.php" method="get" target="_blank">
+    <label for="qrIdPeca">ID da Peça:</label>
+    <input type="number" id="qrIdPeca" name="idPeca" required><br>
+    <button type="submit">Gerar QR Code</button>
+</form>
+
 <br>
 <button onclick="window.location.href='add_piece.php'">Adicionar Peça</button>
 <button onclick="window.location.href='remove_piece.php'">Remover Peça</button>
